@@ -1,2 +1,9 @@
 # mcb185_homework
-meow
+
+data
+data -I
+cat 
+dog
+c.elegan
+hi
+random_stuff
