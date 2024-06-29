@@ -91,6 +91,11 @@ functions														# represented by keyword 'def'
 """
 1. Write a function that turns negative numbers into positive numbers and vice versa. Give your function 
 a name that is simultaneously simple and descriptive.
+	these all mean the same thing: 
+		-1 * b
+		(-1)*b
+		((-1)*b)
+		-b
 """
 def inverse(x):
 	return(x)
