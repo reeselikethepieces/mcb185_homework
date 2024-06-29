@@ -305,3 +305,95 @@ def is_integer(x):
 
 print(is_integer(2.0))
 
+
+"""
+Write a function that determines if a number is odd.
+"""
+
+def is_odd(x):
+	if x % 2 == 1: return True
+	return False
+
+print(is_odd(100))
+print(is_odd(101))
+
+"""
+Write a function that determines if a number is a valid probability.
+""" 
+
+def is_pvalid(x):
+	if x >= 0 and x <= 1: return True
+	return False
+
+print(is_pvalid(1.4))
+print(is_pvalid(0.3))
+print(is_pvalid(1))
+print(is_pvalid(.69))
+
+"""
+Write a function that returns the molecular weight of a DNA letter.
+"""
+def mw_daltons(nt):
+	if		nt == 'A':	return	313.23
+	elif	nt == 'T':	return	304.21
+	elif	nt == 'C':	return	289.20
+	elif	nt == 'G':	return	329.23
+	else:	            return None
+
+print(mw_daltons('A'))
+print(mw_daltons('G'))
+
+"""
+Write a function that returns the complement of a DNA letter.
+AT or TA 
+CG or GC 
+"""
+
+def comp(nt):
+	if		nt == 'C':	return	'G'
+	elif 	nt == 'G':	return	'C'
+	elif	nt == 'A':	return	'T'
+	elif	nt == 'T':	return	'A'
+	else:               return None
+
+print(comp('A'))
+print(comp('C'))
+
+"""
+Stylin' Rules
+	spacing 
+		- max line length of 79 (most of the time)
+		- 1 space around/after operators 
+			if   "Hello, my name is Bob. What's your name?":	return True
+			elif "Hello,my name is Bob.What's your name?":		return False 
+		
+			if   print(a, b, c): return True
+			elif print(a,b,c):   return False
+		
+			if    a > b: a = 1 return True
+			elife a>b:a=1      return False
+		- vertical spacing to separate logic
+		- tabs for left side indentation
+		- spaces for lining up if-elif-else
+		- no space between a function and ()
+			def is_example():
+		- 'return' is a _keyword_ not a function; ergo, no () 
+	naming 
+		- variable and fxn = lowercase
+		- multi-word = used_snake_case, snakecase, but not mixedCase 
+		- variables often == short names, which describes their type 
+			- loop variables often == short names, but for longer-lived variables, more descriptive names == ideal
+				(exs)
+					i, j, k, and n == integers
+					f, x, and y == floating point numbers
+					p and q == probabilities
+					a, b, and c == numbers 
+					c == character
+					s == string
+					fp == file pointer
+				(bio exs)
+					nt and aa == single characters of nucleotides or amino acids
+					seq == bio sequence
+					dna, rna, tx == nucleotide strings
+					pro and pep == protein/peptide strings
+"""
