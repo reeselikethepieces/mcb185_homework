@@ -299,13 +299,9 @@ def is_integer(n)		# let n == number
 	return n =
 '''
 
-
-b = 1
-c = 1.0
-d = math.e
-print(type (b))
-
 def is_integer(x):
-	return ()
-		if x == type(b):						print('is an integer')
-		elif x != type(c) or x != type(d):		print('not an integer')
+	if x % 1 == 0: return True
+	return False
+
+print(is_integer(2.0))
+
