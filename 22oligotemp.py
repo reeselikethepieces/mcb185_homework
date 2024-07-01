@@ -11,8 +11,8 @@ oligo melting temp (Tm)
 """
 
 def oligo_tm(A, T, G, C):
-	if (A + T + G + C) <= 13:	return (A + T)*2 + (C + G)*4
-	else:                       return 64.9 + 41*(G + C - 16.4) / (A + T + G + C)
+	if (A + T + G + C) <= 13: return (A + T)*2 + (C + G)*4
+	else:                     return 64.9 + 41*(G + C - 16.4) / (A + T + G + C)
 	
 print(oligo_tm(3, 3, 2, 2)) 	#less than 13
 print(oligo_tm(44, 44, 27, 27)) #more than 13
