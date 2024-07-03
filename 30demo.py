@@ -18,10 +18,12 @@ Iteration
 			(Ex 4.0 below) - demonstrates how a loop does not have to start at 0 and has different 
 				????? paremeters? 
 	for i in range()
-		- most loops in python are `for` loops 
-			(Ex 4.1 below) 
-			for i in range(starting value, up-to value, increments value)
+		- most loops in python are `for` loops  
+			for i in range(starting value*, up-to value, increments value*)
+				* can be removed if your starting value is 0 and increment, increases by 1 
 	for item in container
+		'for' loops can be used to loop over items in a container
+		up to this point, 
 nested loops ~ 31fizzbuzz.py
 algorithms
 practice problems
@@ -72,13 +74,16 @@ print('final value of i is', i)
 """
 Ex 4.1
 for i in range(starting value, up-to value, increments value): -  reese words
+
 for i in range(initial value, end-before limit, increment*): - korf
-			*most "for i in range()" loops increment by 1 
-				ergo, can remove increment and have it as, Ex 4.2
+	most "for i in range()" loops increment by 1 
+		ergo, can remove increment and have it as, Ex 4.2
+		
 Ex 4.2 
 for i in range(initial value*, end-before limit)
-			*most "for i in range()" loops, initial value/start at 0
-				ergo, can remove initial value and have it as, Ex 4.3
+	*most "for i in range()" loops, initial value/start at 0
+		ergo, can remove initial value and have it as, Ex 4.3
+		
 Ex 4.3
 for in in range(end-before): 
 
