@@ -23,8 +23,18 @@ Iteration
 				* can be removed if your starting value is 0 and increment, increases by 1 
 	for item in container
 		'for' loops can be used to loop over items in a container
+			items in the container are characters | 'strings' are the container
+			(Ex 5.0 and 5.1) 
 		up to this point, 
 nested loops ~ 31fizzbuzz.py
+	loops inside other loops 
+	conditionals can be inside loops and vice-versa
+	in seq alignment, a pair of letters is given a score
+			+1 = match		 	-1 = mismatch
+	scoring matrix = all possible pairings of letters
+		full matrix: inner loop starts at 0
+		half matrix + major diagonal: inner loop starts at i 
+		half matrix - major diagonal: inner loop starts at i + 1 
 algorithms
 practice problems
 practice solutions
@@ -95,7 +105,45 @@ for i in range(0, 5, 1):  print(i)
 for i in range(0, 5):     print(i)
 for i in range(5):        print(i)
 
+""" 
+Ex 5.0 'hello' string has 5 characters
+Ex 5.1 nt and aa vs.
+"""
+for char in 'hello':
+	print(char)
 
+seq = 'GAATTC'
+for nt in seq:
+	print(nt)
+
+"""
+nested loop ex
+print(outerloop, innerloop, value) 
+"""
+for nt1 in 'ACGT':
+	for nt2 in 'ACGT':
+		if nt1 == nt2: print(nt1, nt2, '+1')
+		else:          print(nt1, nt2, '-1')
+
+"""
+nested loop ex with abstraction
+"""
+nts = 'ACGT'
+for nt1 in nts:
+	for nt2 in nts:
+		if nt1 == nt2: print(nt1, nt2, '+1')
+		else:          print(nt1, nt2, '-1')
+
+"""
+scoring matrix
+i.e. phylogenetics, distance from spp1 to spp2 (distance is the same in both directions)
+	thus, no point in specifiying both distances
+	given, 4 spps, we initialize the inner loop one beyond (+1) the current value of the outer loop
+"""
+limit = 4
+for i in range(0, limit):
+	for j in range(i + 1, limit):
+		print(i+1, j+1)
 """
 /ysp
 limit = 100
