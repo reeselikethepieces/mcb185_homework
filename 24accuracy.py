@@ -14,12 +14,8 @@ help from internet
 """
 
 def accuracy_f1(tp, fp, fn, tn):
-	p = tp / (tp + fp)
-	r = tp / (tp + fn)
-	f <= 1 and >= 0:
+	a = (tp + tn) / (tp + tn + fp + fn) 
+	f = 2 * tp/(tp + fp) * tp/(tp + fn) 
+	return a,f 
 	
-	if tp  or  tn: return (tp + tn) / (tp + tn + fp + fn), 2 * p * r 
-	elif fp:         return 'type I error'
-	else fn:         return 'type II error' 
-
 print(accuracy_f1(4 , 7, 3, 6))
