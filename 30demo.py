@@ -16,7 +16,8 @@ Iteration
 		  boolean expression is no longer true 
 			(Ex3 below)
 			(Ex 4.0 below) - demonstrates how a loop does not have to start at 0 and has different 
-				????? paremeters? 
+				 parameters or arguments 
+					positional arguments - specifically 
 	for i in range()
 		- most loops in python are `for` loops  
 			for i in range(starting value*, up-to value, increments value*)
@@ -177,4 +178,5 @@ A		x	x	x
 B			x	x
 C				x
 D
+symmetrical along the diagonal 
 """
