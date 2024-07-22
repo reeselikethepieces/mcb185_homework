@@ -20,11 +20,19 @@ print(name(p, value))
 
 import math
 
-def prob_phred(p, q):
-	p = 10 ** -q // 10
-	q = -10 * (math.log10(p))
-	if 0 < p < 1 and q > 1: return p, q
+def prob_phred(x):
+	if x > 0 and x < 1: return -10 * (math.log10(x)) 
+	return 10 ** (-x / 10)
 	
-print(prob_phred(.35, q))
-print(prob_phred(p, 40))
+print(prob_phred(.35))	# guess these are not good examples for phred scores 
+print(prob_phred(.68))  # "" 
+print(prob_phred(.95))
+print(prob_phred(.97))
+print(prob_phred(.99))
+print(prob_phred(.01))
+print(prob_phred(.12))
+print(prob_phred(10))
+print(prob_phred(40))
+print(prob_phred(60))
+	
 	
